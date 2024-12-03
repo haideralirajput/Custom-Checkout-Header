@@ -66,4 +66,3 @@ Shopify allows merchants to customize their checkout flow, and with this extensi
 
 ## License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
->>>>>>> f92325a8c019e8f8ac16b244f0da2ff8dc5ef33b
