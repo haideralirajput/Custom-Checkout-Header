@@ -1,0 +1,33 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+client_id = "593e0ce36f6a53a3394eada34f714628"
+application_url = "https://expect-disabled-revision-col.trycloudflare.com"
+embedded = true
+name = "custom-checkout-header"
+handle = "custom-checkout-header-1"
+
+[webhooks]
+api_version = "2024-10"
+
+  [[webhooks.subscriptions]]
+  topics = [ "app/uninstalled" ]
+  uri = "/webhooks/app/uninstalled"
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "write_products"
+
+[auth]
+redirect_urls = [
+  "https://expect-disabled-revision-col.trycloudflare.com/auth/callback",
+  "https://expect-disabled-revision-col.trycloudflare.com/auth/shopify/callback",
+  "https://expect-disabled-revision-col.trycloudflare.com/api/auth/callback"
+]
+
+[pos]
+embedded = false
+
+[build]
+include_config_on_deploy = true
+dev_store_url = "apps-test124.myshopify.com"
+automatically_update_urls_on_dev = true
